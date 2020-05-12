@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.gitignore
+README.md
+./store/README.md
+./static/README.md
+./plugins/README.md
+./pages/README.md
+./middleware/README.md
+./components/README.md
+./assets/README.md
