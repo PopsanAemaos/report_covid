@@ -1,0 +1,156 @@
+{
+    "Symptoms":[
+        {
+            "value":"G01",
+            "nameEN":"Throw up ( อาเจียน )",
+            "nameTH":"",
+            "CF":0.36
+        },
+        {
+            "value":"G02",
+            "nameEN":"Fever > 38oC ( มีไข้มากกว่า 38 องศาเซลเซียส )",
+            "nameTH":"",
+            "CF":0.8
+        },
+        {
+            "value":"G03",
+            "nameEN":"Tired and lethargic ( เหนื่อยล้า ง่วงนอน )",
+            "nameTH":"",
+            "CF":0.16
+        },
+        {
+            "value":"G04",
+            "nameEN":"Diarrhea ( ท้องเสีย )",
+            "nameTH":"",
+            "CF":0.16
+        },
+        {
+            "value":"G05",
+            "nameEN":"Flu ( ไข้หวัด )",
+            "nameTH":"",
+            "CF":0.9
+        },
+
+        {
+            "value":"G06",
+            "nameEN":"Respiratory disorders ( ระบบทางเดินหายใจขัดข้อง )",
+            "nameTH":"",
+            "CF":0.8
+        },
+        {
+            "value":"G07",
+            "nameEN":"Pneumonia ( ปอดบวม )",
+            "nameTH":"",
+            "CF":0.9
+        },
+        {
+            "value":"G08",
+            "nameEN":"Difficulty breathing and chest pain ( หายใจลำบาก เจ็บหน้าอก )",
+            "nameTH":"",
+            "CF":0.48
+        },
+        {
+            "value":"G09",
+            "nameEN":"Throat pain ( เจ็บคอ )",
+            "nameTH":"",
+            "CF":0.64
+        },
+        {
+            "value":"G10",
+            "nameEN":"Dry cough ( ไอแห้ง )",
+            "nameTH":"",
+            "CF":0.9
+        },
+        {
+            "value":"G11",
+            "nameEN":"Feeling unwell ( รู้สึกไม่สบายตัว )",
+            "nameTH":"",
+            "CF":0.8
+        },
+        {
+            "value":"G12",
+            "nameEN":"Complaints continue ( มีอาการต่อเนื่อง )",
+            "nameTH":"",
+            "CF":0
+        },
+        {
+            "value":"G13",
+            "nameEN":"Disoriented ( สับสน งุนงง )",
+            "nameTH":"",
+            "CF":0
+        },
+        {
+            "value":"G14",
+            "nameEN":"Difficult to wake up ( ตื่นนอนลำบาก )",
+            "nameTH":"",
+            "CF":0.08
+        },
+        {
+            "value":"G15",
+            "nameEN":"Bluish lips or face ( ปากหรือใบหน้าซีด )",
+            "nameTH":"",
+            "CF":0
+        }
+    ],
+    "Activities_History":[
+        {
+            "value":"R01",
+            "nameEN":"Trip 14 days ago to the COVID-19 transmission area ( เคยไปสถานที่ที่มีการแพร่ระบาดของ COVID-19 ใน 14 วัน )",
+            "nameTH":"",
+            "CF":0.8
+        },
+        {
+            "value":"R02",
+            "nameEN":"Contact with confirmed COVID-19 cases ( มีการติดต่อกับผู้ป่วยโรค COVID-19 )",
+            "nameTH":"",
+            "CF":0.8
+        },
+        {
+            "value":"R03",
+            "nameEN":"Feel the symptoms after 3-6 days and have been in contact with COVID-19 cases ( รู้สึกมีอาการหลังจากติดต่อผู้ป่วยใน 3-6 วัน )",
+            "nameTH":"",
+            "CF":0.64
+        },
+        {
+            "value":"R04",
+            "nameEN":"Having the flu after 14 days of traveling to the COVID-19 transmission area ( มีไข้หวัดหลังจากเดินทางไปสถานที่ที่มีการแพร่ระบาดของ COVID-19 ใน 14 วัน )",
+            "nameTH":"",
+            "CF":0.24
+        }
+    ],
+    "Physiological_Conditions":[
+        {
+            "value":"K01",
+            "nameEN":"Elderly (65 older) ( ผู้สูงวัย(65 ปีขึ้นไป) )",
+            "nameTH":"",
+            "CF":0.64
+        },
+        {
+            "value":"K02",
+            "nameEN":"Mature (15-65 years) ( ผู้ใหญ่(15-65 ปี) ) ",
+            "nameTH":"",
+            "CF":0.48
+        },
+        {
+            "value":"K03",
+            "nameEN":"Kid (under 15 years) ( เด็ก(ต่ำกว่า 15 ปี) )",
+            "nameTH":"",
+            "CF":0.36
+        }
+    ],
+    "Feel":[
+
+        {
+            "value":"K04",
+            "nameEN":"Did not feel any symptoms but had contact with COVID-19 ( ไม่มีอาการแต่เคยติดต่อผู้ป่วยโรคCOVID-19 )",
+            "nameTH":"",
+            "CF":0.2
+        },
+        {
+            "value":"K05",
+            "nameEN":"Does not have any symptoms and never had contact with COVID-19 ( ไม่มีอาการและไม่เคยติดต่อผู้ป่วยโรคCOVID-19 )",
+            "nameTH":"",
+            "CF":0.98
+        }
+    ]
+}

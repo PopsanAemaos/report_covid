@@ -48,6 +48,19 @@
        <div v-if="displayCard === false">
          <Cardthai  />
       </div>
+      <row>
+        <div align="center" >
+
+         
+             <nuxt-link to="/analysis" type="button" class="btn filter-type-btn"  >
+             Analysis
+            </nuxt-link >
+
+
+           
+        </div>   
+         
+      </row>
       
 
     </div>

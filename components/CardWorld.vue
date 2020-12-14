@@ -12,7 +12,7 @@
             header="ผู้ติดเชื่อ"
             class="text-center"
           >
-            <b-card-text> คน</b-card-text>
+            <b-card-text>72,270,693 คน</b-card-text>
           </b-card>
           <b-card
             v-else
@@ -21,7 +21,7 @@
             header="ผู้ติดเชื่อ"
             class="text-center"
           >
-            <b-card-text>1,286,409 คน</b-card-text>
+            <b-card-text>72,270,693 คน</b-card-text>
           </b-card>
           </nuxt-link>
         </div>
@@ -36,7 +36,7 @@
             header="จำนวนผู้รักษา"
             class="text-center"
           >
-            <b-card-text>270,098 คน</b-card-text>
+            <b-card-text>370,098 คน</b-card-text>
           </b-card>
           <b-card
             v-else
@@ -45,7 +45,7 @@
             header="จำนวนผู้รักษา"
             class="text-center"
           >
-            <b-card-text>270,098 คน</b-card-text>
+            <b-card-text>370,098 คน</b-card-text>
           </b-card>
         </div>
       </div>
@@ -59,7 +59,7 @@
             header="จำนวนผู้เสียชีวิต"
             class="text-center"
           >
-            <b-card-text>70,356</b-card-text>
+            <b-card-text>1,613,260 คน</b-card-text>
           </b-card>
           <b-card
             v-else
@@ -68,19 +68,20 @@
             header="จำนวนผู้เสียชีวิต"
             class="text-center"
           >
-            <b-card-text>70,356</b-card-text>
+            <b-card-text>1,613,260 คน</b-card-text>
           </b-card>
         </div>
       </div>
-      <div class="col-md-3" />
-        <p v-if="GETthailand">
+      
+  </div><br>
+  <div class="col-md-12" />
+        <p style="color:#ffffff" align="center" v-if="GETthailand">
           {{GETthailand.date}} :: {{GETthailand.deaths}}
-          </p>
+        </p>
       <!-- <p v-for="list in GETthailand">
           {{list.date}}
       </p> -->
     </div>
-  </div>
 </template>
 
 <script>

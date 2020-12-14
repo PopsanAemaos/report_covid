@@ -69,7 +69,7 @@
             <b-card-text>{{thailat.deaths}} คน</b-card-text>
           </b-card>
         </div>
-      </div>
+      </div><br><br>
       <div class="col-md-3" />
     </div>
   </div>
