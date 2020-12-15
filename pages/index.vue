@@ -17,47 +17,48 @@
 
           <div v-if="displayCard === true" >
              <button type="button" class="btn filter-type-btn is-filter-btn-active" @click="displayCard = true" >
-            🌎 ทั่วโลก
-            </button>
-
-
-            <button type="button" class="btn filter-type-btn" @click="displayCard = false">
             ประเทศไทย
             </button>
+
+
+            <!-- <button type="button" class="btn filter-type-btn" @click="displayCard = false">
+            🌎 ทั่วโลก
+            </button> -->
           </div>
 
           <div v-if="displayCard === false">
              <button type="button" class="btn filter-type-btn" @click="displayCard = true" >
-            🌎 ทั่วโลก
-            </button>
-
-
-            <button type="button" class="btn filter-type-btn is-filter-btn-active" @click="displayCard = false">
             ประเทศไทย
             </button>
+
+
+            <!-- <button type="button" class="btn filter-type-btn is-filter-btn-active" @click="displayCard = false">
+            🌎 ทั่วโลก
+            </button> -->
           </div>
+
          
          
         </div>
       </row>
       <br />
       <div v-if="displayCard === true">
-         <Cardworld  />
+         <Cardthai  />
       </div>
 
        <div v-if="displayCard === false">
-         <Cardthai  />
+         <Cardworld  />
       </div>
       <row>
         <div align="center" >
-
-         
-             <nuxt-link to="/analysis" type="button" class="btn filter-type-btn"  >
-             Analysis
+            <nuxt-link to="/analysis" type="button" class="btn filter-type-btn"  >
+             วินิจฉัยโรค
             </nuxt-link >
-
-
-           
+                
+            <nuxt-link to="/protech" type="button" class="btn filter-type-btn"  >
+             การป้องกัน
+            </nuxt-link >
+      
         </div>   
          
       </row>
@@ -77,13 +78,12 @@ import Vue from "vue";
 import BootstrapVue from "bootstrap-vue";
 import { mapState } from "vuex";
 import Logo from "~/components/Logo.vue";
-import Cardworld from "~/components/CardWorld.vue";
+// import Cardworld from "~/components/CardWorld.vue";
 import Cardthai from "~/components/CardThai.vue";
 
 export default {
   components: {
     Logo,
-    Cardworld,
     Cardthai
   },
 
@@ -99,7 +99,7 @@ export default {
    methods: {
     change(displayCard) {
       this.displayCard = !displayCard;
-      console.log(this.displayCard);
+      // console.log(this.displayCard);
     }
   }
 

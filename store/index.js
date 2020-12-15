@@ -1,8 +1,10 @@
 export const state = () => ({
     counter: 0 ,
+    allconfirmed: 0,
+    allrecovered: 0,
+    allideaths: 0,
     Infected:[],
-    
-    })
+})
 
 
 export const getters = {

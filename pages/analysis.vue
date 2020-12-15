@@ -108,6 +108,11 @@ export default {
       // this.options_Feel = covidRules.Feel;
     },
     onSubmit() {
+      if (this.selected_Physiological_Conditions.length === 0) {
+        this.text = 'กรุณาระบุช่วงอายุ'
+        this.$refs['my-modal'].show()
+
+      } else if(this.selected_Physiological_Conditions.length === 1) {
         if (this.selected_Symptoms.length !== 0) {
         // eslint-disable-next-line no-restricted-syntax
           for (const i of this.selected_Symptoms) {
@@ -131,8 +136,25 @@ export default {
           const values = covidRules.Physiological_Conditions[index].CF;
           this.last_values = this.last_values + (values * (1 - this.last_values));
         }
-        this.text = `ความเสี่ยงที่คุณจะติดเชื่อ ${(this.last_values*100).toFixed(2)} %`;
+        if(this.last_values*100 >= 0 && this.last_values*100 <= 75 ){
+                this.text = 'ยังไม่แสดงอาการ';
+                // this.$refs['my-modal'].show()
+        }
+        if(this.last_values*100 > 75 && this.last_values*100 <= 95 ){
+                  this.text = 'กลุ่มเฝ้าระวังควรกักตัวอยู่บ้าน';
+        // this.$refs['my-modal'].show()
+        }
+        if(this.last_values*100 > 95 && this.last_values*100 <= 100 ){
+                this.text =   'ควรไปพบแพทย์';
+                // this.$refs['my-modal'].show()
+        }
+        // this.text = `ความเสี่ยงที่คุณจะติดเชื่อ ${(this.last_values*100).toFixed(2)} %`;
         this.$refs['my-modal'].show()
+      } else {
+        this.text = 'กรุณาระบุช่วงอายุให้ถูกต้อง'
+        this.$refs['my-modal'].show()
+
+      }
     },
     onReset(evt) {
       this.$refs['my-modal'].hide()
